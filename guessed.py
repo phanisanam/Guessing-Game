@@ -1,6 +1,7 @@
 exit=0;
 s1=0;
 s2=0;
+n=1;
 print("Welcome  to guessing game");
 print("\n");
 print("RULES:");
@@ -10,7 +11,8 @@ print("if you guess correctly you will get 10 points");
 print("if you guess wrong you lose 2 points");
 print("if both are wrong each lose one point")
 import random
-while exit!="e":
+rounds=int(input("How many rounds you want to play:"))
+while exit!="e" and n<=rounds:
  print("Let's Roll the Dices");
  p1=int(input("Player-1:guess your  number"))
  p2=int(input("Player-2:guess your number"))
@@ -19,13 +21,13 @@ while exit!="e":
  if  number==1:
     print("[                       ]")
     print("[                       ]")
-    print("[         0             ]")
+    print("[         0            ]")
     print("[                       ]")
     print("[                       ]")
  elif  number==2:
     print("[                        ]")
     print("[                        ]")
-    print("[      0       0         ]")
+    print("[      0       0       ]")
     print("[                        ]")
     print("[                        ]")
     print()
@@ -93,9 +95,10 @@ while exit!="e":
  else:
      print("\n");
      print("both having same score ");
- print("Type  e  to exit (or) you can play again ")
+ print("Type  e  to for emergency exit ")
+ n=n+1;
  exit=input()
- if exit=="e":
+ if exit=="e"or n>rounds:
      if s1>s2:
          print("\n");
          print("RESULT")
