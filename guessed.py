@@ -5,16 +5,57 @@ print("Welcome  to guessing game");
 print("\n");
 print("RULES:");
 print("-------------");
+print("Here we roll the dice and players would guess the number")
 print("if you guess correctly you will get 10 points");
 print("if you guess wrong you lose 2 points");
 print("if both are wrong each lose one point")
 import random
 while exit!="e":
- print("Let's Play");
+ print("Let's Roll the Dices");
  p1=int(input("Player-1:guess your  number"))
  p2=int(input("Player-2:guess your number"))
  number=random.choice([1,2,3,4,5,6])
  print("the number is:",number);
+ if  number==1:
+    print("[                       ]")
+    print("[                       ]")
+    print("[         0             ]")
+    print("[                       ]")
+    print("[                       ]")
+ elif  number==2:
+    print("[                        ]")
+    print("[                        ]")
+    print("[      0       0         ]")
+    print("[                        ]")
+    print("[                        ]")
+    print()
+ elif  number==3:
+    print("[                        ]")
+    print("[       0       0      ]")
+    print("[                        ]")
+    print("[            0          ]")
+    print("[                        ]")
+    print()
+ elif  number==4:
+    print("[        0       0      ]")
+    print("[                         ]")
+    print("[                         ]")
+    print("[        0       0      ]")
+    print("[                         ]")
+    print()
+ elif  number==5:
+    print("[      0         0     ]")
+    print("[                        ]")
+    print("[            0          ]")
+    print("[                        ]")
+    print("[      0         0     ]")
+    print()
+ else:
+    print("[      0       0     ]")
+    print("[                      ]")
+    print("[      0       0     ]")
+    print("[                      ]")
+    print("[      0       0     ]")
  if number==p1:
      print("player one is correct");
      s1=s1+10;
