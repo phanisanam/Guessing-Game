@@ -142,7 +142,7 @@ while exit!="e" and n<=rounds:
  
  summary();
  
- print("Type  e  to for emergency exit ")
+ print("Type  e  to for emergency exit. ")
  n=n+1;
  exit=input()
  if exit=="e"or n>rounds:
